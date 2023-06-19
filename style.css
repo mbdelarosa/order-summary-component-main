@@ -1,0 +1,157 @@
+/* CSS Reset  */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font: inherit;
+}
+
+p, h1 {
+  overflow-wrap: break-word;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/* End */
+
+:root {
+  --white: hsl(0, 0%, 100%);
+
+  /* Primary */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  /* Neutral */
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  background-color: var(--pale-blue);
+  font-family: 'Red Hat Display', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+.card {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 1rem;
+  overflow: hidden;
+  max-width: 25rem;
+  border-radius: 20px;
+}
+
+.content {
+  padding: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: var(--dark-blue);
+  font-size: 1.4375rem; /* 23px */
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: var(--desaturated-blue);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+.content-text {
+  margin-bottom: 1rem;
+}
+
+.plan {
+  background-color: var(--very-pale-blue);
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.plan-text {
+  text-align: left;
+  align-self: stretch;
+}
+
+h2 {
+  color: var(--dark-blue);
+  font-size: 1.125rem; /* 18px */
+  font-weight: 900;
+}
+
+.change-plan {
+  font-weight: 700;
+  color: var(--bright-blue);
+}
+
+button {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 900;
+}
+
+.button-primary {
+  background-color: var(--bright-blue);
+  color: var(--white);
+}
+
+.button-light {
+  background-color: var(--white);
+  color: var(--desaturated-blue);
+}
