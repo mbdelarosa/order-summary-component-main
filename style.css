@@ -59,6 +59,9 @@ p, h1 {
 }
 
 body {
+  background-image: url('./images/pattern-background-mobile.svg');
+  background-position: top;
+  background-repeat: no-repeat;
   background-color: var(--pale-blue);
   font-family: 'Red Hat Display', sans-serif;
   display: flex;
