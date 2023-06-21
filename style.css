@@ -81,6 +81,7 @@ body {
   max-width: 25rem;
   border-radius: 20px;
   font-size: 1rem;
+  box-shadow: 0 0.75rem 1rem 0.5rem hsla(0, 0%, 0%, 0.05);
 }
 
 .content {
@@ -143,6 +144,7 @@ h2 {
   border-radius: 10px;
   background-color: var(--bright-blue);
   color: var(--white);
+  box-shadow: 0 1rem 1rem hsla(245, 75%, 52%, 0.25);
 }
 
 .cancel {
@@ -160,6 +162,7 @@ h2 {
 
   .content {
     padding: 3rem 2.75rem;
+    gap: 1.25rem;
   }
 
   h1 {
@@ -185,5 +188,10 @@ h2 {
 
   .button-text {
     font-size: 0.875rem;
+  }
+
+  .payment {
+    padding: 0.9375rem;
+    margin-bottom: 0.25rem;
   }
 }
