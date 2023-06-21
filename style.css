@@ -47,6 +47,7 @@ p, h1 {
 
 :root {
   --white: hsl(0, 0%, 100%);
+  --bright-blue-hover: hsl(245, 83%, 68%);
 
   /* Primary */
   --pale-blue: hsl(225, 100%, 94%);
@@ -133,6 +134,11 @@ h2 {
   margin-left: auto;
 }
 
+.plan > a:hover {
+  color: var(--bright-blue-hover);
+  text-decoration: none;
+}
+
 .button-text {
   font-weight: 900;
   display: block;
@@ -147,8 +153,16 @@ h2 {
   box-shadow: 0 1rem 1rem hsla(245, 75%, 52%, 0.25);
 }
 
+.payment:hover {
+  background-color: var(--bright-blue-hover);
+}
+
 .cancel {
   color: var(--desaturated-blue);
+}
+
+.cancel:hover {
+  color: var(--dark-blue);
 }
 
 @media only screen and (min-width: 80rem) {
